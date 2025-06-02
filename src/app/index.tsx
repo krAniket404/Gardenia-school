@@ -4,9 +4,9 @@ export * from "./hero";
 export * from "./layout";
 export * from "./page";
 export * from "./students-feedback";
-export * from "./explore-courses";
+export * from "./activities";
 export * from "./testimonial";
-export * from "./courses-categories";
+export * from "./why-us";
 export * from "./events";
 
 

@@ -14,8 +14,8 @@ import { Navbar } from "@/components";
 // import TrustedCompany from "./trusted-companies";
 
 const OutImpressiveStats = dynamic(() => import("./out-impressive-stats"), { ssr: false });
-const CoursesCategories = dynamic(() => import("./courses-categories"), { ssr: false });
-const ExploreCourses = dynamic(() => import("./explore-courses"), { ssr: false });
+const CoursesCategories = dynamic(() => import("./why-us"), { ssr: false });
+const ExploreCourses = dynamic(() => import("./activities"), { ssr: false });
 const Testimonial = dynamic(() => import("./testimonial"), { ssr: false });
 const Events = dynamic(() => import("./events"), { ssr: false });
 const StudentsFeedback = dynamic(() => import("./students-feedback"), { ssr: false });

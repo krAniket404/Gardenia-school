@@ -4,13 +4,11 @@ import Image from "next/image";
 
 interface CourseCardProps {
   img: string;
-  tag: string;
   title: string;
   desc: string;
-  label: string;
 }
 
-export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
+export function CourseCard({ img, title, desc }: CourseCardProps) {
   return (
     <Card className="border">
       <CardHeader className="h-64">
@@ -29,7 +27,7 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
             color="blue"
             className="mb-2 font-normal text-gray-500"
           >
-            {tag}
+            {title}
           </Typography>
         </div>
         <a
@@ -43,7 +41,7 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
         <Typography className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
-        <Button variant="outlined">{label}</Button>
+        <Button variant="outlined" color="red">Enroll Now</Button>
       </CardBody>
     </Card>
   );
