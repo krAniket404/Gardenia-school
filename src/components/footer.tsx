@@ -1,5 +1,5 @@
 "use client";
-import { Typography, Button, Input } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
 import { InstagramFilled, YoutubeFilled, FacebookFilled } from "@ant-design/icons";
@@ -8,9 +8,8 @@ const LINKS = [
   {name: "Home", href: "/"},
   {name: "About", href: "/about"},
   {name: "Activities", href: "/activities"},
-  {name: "Admission", href: "/admission"},
   {name: "Gallery", href: "/gallery"},
-  {name: "Contact", href: "/contact"},
+  {name: "Contact", href: "https://wa.me/6200814842"},
 ];
 
 const SOCIAL_LINKS = [

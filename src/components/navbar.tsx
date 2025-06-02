@@ -36,11 +36,6 @@ const NAV_MENU = [
     href: "/activities",
   },
   {
-    name: "Admission",
-    icon: AcademicCapIcon,
-    href: "/admission",
-  },
-  {
     name: "Gallery",
     icon: PhotoIcon,
     href: "/gallery",
@@ -48,7 +43,7 @@ const NAV_MENU = [
   {
     name: "Contact",
     icon: EnvelopeIcon,
-    href: "https://wa.me/6281234567890",
+    href: "https://wa.me/6200814842",
   },
 ];
 
@@ -109,8 +104,7 @@ export function Navbar() {
             </ul>
             <div className="hidden items-center gap-4 xl:flex">
               <a
-                href="https://www.material-tailwind.com/blocks"
-                target="_blank"
+                href="#"
               >
                 <Button color="red">Enroll Now</Button>
               </a>
@@ -140,8 +134,7 @@ export function Navbar() {
               </ul>
               <div className="mt-6 mb-4 flex items-center gap-4">
                 <a
-                  href="https://www.material-tailwind.com/blocks"
-                  target="_blank"
+                  href="#"
                 >
                   <Button color="red">Enroll Now</Button>
                 </a>
