@@ -1,6 +1,4 @@
-"use client";
-
-import { Typography } from "@material-tailwind/react";
+import { Typography } from "@/components/exports";
 import ExploreActivityCard from "@/components/explore-activity-card";
 
 const ACTIVITIES = [

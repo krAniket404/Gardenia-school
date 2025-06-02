@@ -1,6 +1,8 @@
 "use client";
-import { Navbar, Footer } from "@/components";
-import { Card, Typography } from "@material-tailwind/react";
+
+import { Card, Typography } from "@/components/exports";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 export default function About() {
   return (
     <>

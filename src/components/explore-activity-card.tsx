@@ -1,14 +1,15 @@
 import { Typography, Card, CardBody, CardHeader, Button } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
 
 
-interface CourseCardProps {
+interface ExploreActivityCardProps {
   img: string;
   title: string;
   desc: string;
 }
 
-export function CourseCard({ img, title, desc }: CourseCardProps) {
+export function ExploreActivityCard({ img, title, desc }: ExploreActivityCardProps) {
   return (
     <Card className="border">
       <CardHeader className="h-64">
@@ -21,17 +22,8 @@ export function CourseCard({ img, title, desc }: CourseCardProps) {
         />
       </CardHeader>
       <CardBody>
-        <div className="flex items-center gap-2">
-          <Typography
-            variant="small"
-            color="blue"
-            className="mb-2 font-normal text-gray-500"
-          >
-            {title}
-          </Typography>
-        </div>
         <a
-          href="#"
+          href="/activities"
           className="text-blue-gray-900 transition-colors hover:text-gray-900"
         >
           <Typography variant="h5" className="mb-2 normal-case">
@@ -41,10 +33,12 @@ export function CourseCard({ img, title, desc }: CourseCardProps) {
         <Typography className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
-        <Button variant="outlined" color="red">Enroll Now</Button>
+        <Link href="/activities">
+          <Button variant="outlined" color="red">View All</Button>
+        </Link>
       </CardBody>
     </Card>
   );
 }
 
-export default CourseCard;
+export default ExploreActivityCard;

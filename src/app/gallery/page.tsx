@@ -1,6 +1,5 @@
 "use client";
 import { Navbar } from "@/components";
-import { Typography } from "@material-tailwind/react";
 import { Footer } from "@/components";
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -47,13 +46,13 @@ const IMAGES = [
 ]
 
 export default function Gallery() {
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState<any>(null);
 
-    const handleImageClick = (image) => {
+    const handleImageClick = (image: any) => {
         setSelectedImage(image);
     }
 
-    const handleCloseModal = e => {
+    const handleCloseModal = (e: any) => {
         if (e.target.tagName !== "IMG") {
             setSelectedImage(null);
         }

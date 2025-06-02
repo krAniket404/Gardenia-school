@@ -1,15 +1,14 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 
-interface CategoryCardProps {
-  img: string;
+interface WhyUsCardProps {
   title: string;
   desc: string;
   icon: React.ElementType;
 }
 
-function CategoryCard({ title, desc, icon: Icon }: CategoryCardProps) {
+function WhyUsCard({ title, desc, icon: Icon }: WhyUsCardProps) {
   return (
     <Card className="relative min-h-[12rem]  w-full overflow-hidden border border-red-200 shadow-none">
       
@@ -27,4 +26,4 @@ function CategoryCard({ title, desc, icon: Icon }: CategoryCardProps) {
     </Card>
   );
 }
-export default CategoryCard;
+export default WhyUsCard;

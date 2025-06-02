@@ -10,18 +10,16 @@ import {
 } from "@material-tailwind/react";
 
 import {
-  GlobeEuropeAfricaIcon,
-  MicrophoneIcon,
   PuzzlePieceIcon,
   HeartIcon,
   PaintBrushIcon,
   FaceSmileIcon,
 } from "@heroicons/react/24/solid";
 
-import CategoryCard from "@/components/why-us-card";
+import WhyUsCard from "@/components/why-us-card";
 
 
-const CATEGORIES = [
+const WHY_US = [
   {
     icon: HeartIcon,
     title: "Kindness",
@@ -44,7 +42,7 @@ const CATEGORIES = [
   },
 ];
 
-export function CoursesCategories() {
+export function WhyUs() {
   const router = useRouter();
   return (
     <section className="container mx-auto px-8 py-36">
@@ -80,13 +78,13 @@ export function CoursesCategories() {
           </CardBody>
         </Card>
         <div className="col-span-1 flex flex-col gap-6">
-          {CATEGORIES.slice(0, 2).map((props, key) => (
-            <CategoryCard key={key} {...props} />
+          {WHY_US.slice(0, 2).map((props, key) => (
+            <WhyUsCard key={key} {...props} />
           ))}
         </div>
         <div className="col-span-1 flex flex-col gap-6">
-          {CATEGORIES.slice(2, 4).map((props, key) => (
-            <CategoryCard key={key} {...props} />
+          {WHY_US.slice(2, 4).map((props, key) => (
+            <WhyUsCard key={key} {...props} />
           ))}
         </div>
       </div>
@@ -94,4 +92,4 @@ export function CoursesCategories() {
   );
 }
 
-export default CoursesCategories;
+export default WhyUs;
