@@ -9,7 +9,7 @@ const LINKS = [
   {name: "About", href: "/about"},
   {name: "Activities", href: "/activities"},
   {name: "Gallery", href: "/gallery"},
-  {name: "Contact", href: "https://wa.me/6200814842"},
+  {name: "Contact", href: "https://wa.me/+916200814842"},
 ];
 
 const SOCIAL_LINKS = [

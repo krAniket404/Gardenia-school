@@ -43,7 +43,7 @@ const NAV_MENU = [
   {
     name: "Contact",
     icon: EnvelopeIcon,
-    href: "https://wa.me/6200814842",
+    href: "https://wa.me/+916200814842",
   },
 ];
 
