@@ -61,6 +61,7 @@ function NavItem({ children, href }: NavItemProps) {
         variant="paragraph"
         color="red"
         className="flex items-center gap-2 font-medium text-gray-900 hover:text-red-500 transition-all duration-300"
+        target={href?.includes("wa.me") ? "_blank" : undefined}
       >
         {children}
       </Typography>
@@ -92,7 +93,13 @@ export function Navbar() {
         >
           <div className="flex items-center justify-between">
             <Link href="/">
-              <Image src="/image/logos/logo.png" priority alt="logo" width={100} height={100} />
+              <Image
+                src="/image/logos/logo.png"
+                priority
+                alt="logo"
+                width={100}
+                height={100}
+              />
             </Link>
             <ul className="ml-10 hidden items-center gap-8 xl:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -103,9 +110,7 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 xl:flex">
-              <a
-                href="#"
-              >
+              <a href="#">
                 <Button color="red">Enroll Now</Button>
               </a>
             </div>
@@ -133,9 +138,7 @@ export function Navbar() {
                 ))}
               </ul>
               <div className="mt-6 mb-4 flex items-center gap-4">
-                <a
-                  href="#"
-                >
+                <a href="#">
                   <Button color="red">Enroll Now</Button>
                 </a>
               </div>
